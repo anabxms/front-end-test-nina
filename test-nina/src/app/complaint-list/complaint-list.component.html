@@ -1,4 +1,11 @@
-<p>complaint-list works!</p>
+<h1>Complaint List</h1>
 <ul>
-    <li *ngFor="let complaint of complaints">{{ complaint.description }}</li>
+    <li *ngFor="let complaint of complaints">
+        <h3>{{ complaint.description }}</h3>
+        <p><strong>Place:</strong> {{ complaint.place }}</p>
+        <p><strong>At Moment:</strong> {{ complaint.at_moment }}</p>
+        <p><strong>Date:</strong> {{ complaint.datetime | date }}</p>
+        <p><strong>Situation:</strong> {{ complaint.situation }}</p>
+        <p><strong>Type:</strong> {{ complaint.type }}</p>
+    </li>
 </ul>

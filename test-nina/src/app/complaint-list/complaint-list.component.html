@@ -1,4 +1,35 @@
 <h1 class="component-title">Complaints</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <label for="place-input">Place:</label>
+            <select name="complaint-place-select" id="complaint-place-select" [(ngModel)]="selectedPlace" (change)="filterComplaints()">
+                <option value="">All</option>
+                <option *ngFor="let place of complaintPlaces" [value]="place">{{ place }}</option>
+            </select>
+        </div>
+        
+        <div class="col-sm">
+            <label for="type-input">Type:</label>
+            <select name="complaint-type-select" id="complaint-type-select" [(ngModel)]="selectedType" (change)="filterComplaints()">
+            <option value="">All</option>
+            <option *ngFor="let type of complaintTypes" [value]="type">{{ type }}</option>
+            </select>
+        </div>
+
+        <div class="col-sm">
+            <label for="situation-input">Situation:</label>
+            <select name="complaint-situation-select" id="complaint-situation-select" [(ngModel)]="selectedSituation" (change)="filterComplaints()">
+            <option value="">All</option>
+            <option *ngFor="let situation of complaintSituation" [value]="situation">{{ situation }}</option>
+            </select>
+        </div>
+
+    </div>
+</div>
+
+
+
 <div class="complaint-cards row row-cols-1 row-cols-md-2 g-4">
     <div class="col-md-4" *ngFor="let complaint of complaints">
       <div class="card border-right">

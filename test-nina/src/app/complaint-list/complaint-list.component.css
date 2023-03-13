@@ -12,6 +12,10 @@
     padding-left: 80px;
 };
 
+.place-input {
+    padding-left: 60px;
+}
+
 .card-text .card-title {
     font-size: 13px;
 }

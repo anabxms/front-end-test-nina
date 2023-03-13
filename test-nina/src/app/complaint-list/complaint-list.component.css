@@ -5,16 +5,27 @@
     margin-bottom: 100px;
 }
 
+.filter {
+    padding-left: 80px;
+    font-size: 13px;
+}
+
+.filter select {
+    border: none;
+    margin-right: 60px;
+    text-transform: capitalize;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
 .component-title {
     font-size: 15px;
     font-weight: bold;
     padding-top: 100px;
     padding-left: 80px;
 };
-
-.place-input {
-    padding-left: 60px;
-}
 
 .card-text .card-title {
     font-size: 13px;

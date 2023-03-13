@@ -1,69 +1,69 @@
 .complaint-cards {
-    margin-top: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 100px;
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 100px;
 }
 
 .filter {
-    padding-left: 80px;
-    font-size: 13px;
+  padding-left: 80px;
+  font-size: 13px;
 }
 
 .filter select {
-    border: none;
-    margin-right: 60px;
-    text-transform: capitalize;
+  border: none;
+  margin-right: 60px;
+  text-transform: capitalize;
 }
 
 .filter label {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .component-title {
-    font-size: 15px;
-    font-weight: bold;
-    padding-top: 100px;
-    padding-left: 80px;
-};
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 100px;
+  padding-left: 80px;
+}
 
 .card-text .card-title {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .card-text {
-    font-size: 12px;
-    text-transform: capitalize;
+  font-size: 12px;
+  text-transform: capitalize;
 }
 
 .card {
-    background-color: white;
-    border: none;
+  background-color: white;
+  border: none;
 }
 
 .situation-unsolved {
-    background-color: #F5C7C7;
-    color: #AE1313;
-    padding: 4px;
-    border-radius: 4px;
-    font-size: 10px;
-    text-transform: capitalize;
+  background-color: #f5c7c7;
+  color: #ae1313;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 10px;
+  text-transform: capitalize;
 }
 
 .situation-solved {
-    background-color: #D6F5C7;
-    color: #235A09;
-    padding: 4px;
-    border-radius: 4px;
-    font-size: 10px;
-    text-transform: capitalize;
+  background-color: #d6f5c7;
+  color: #235a09;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 10px;
+  text-transform: capitalize;
 }
 
 .situation-inprogress {
-    background-color: #F5F1C7;
-    color: #96700E;
-    padding: 4px;
-    border-radius: 4px;
-    font-size: 10px;
-    text-transform: capitalize;
+  background-color: #f5f1c7;
+  color: #96700e;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 10px;
+  text-transform: capitalize;
 }

@@ -1,0 +1,54 @@
+.complaint-cards {
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+}
+
+.component-title {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 100px;
+    padding-left: 80px;
+};
+
+.card-text .card-title {
+    font-size: 13px;
+}
+
+.card-text {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.card {
+    background-color: white;
+    border: none;
+}
+
+.situation-unsolved {
+    background-color: #F5C7C7;
+    color: #AE1313;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+.situation-solved {
+    background-color: #D6F5C7;
+    color: #235A09;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+.situation-inprogress {
+    background-color: #F5F1C7;
+    color: #96700E;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    text-transform: capitalize;
+}

@@ -1,11 +1,18 @@
-<h1>Complaint List</h1>
-<ul>
-    <li *ngFor="let complaint of complaints">
-        <h3>{{ complaint.description }}</h3>
-        <p><strong>Place:</strong> {{ complaint.place }}</p>
-        <p><strong>At Moment:</strong> {{ complaint.at_moment }}</p>
-        <p><strong>Date:</strong> {{ complaint.datetime | date }}</p>
-        <p><strong>Situation:</strong> {{ complaint.situation }}</p>
-        <p><strong>Type:</strong> {{ complaint.type }}</p>
-    </li>
-</ul>
+<h1 class="component-title">Complaints</h1>
+<div class="complaint-cards row row-cols-1 row-cols-md-2 g-4">
+    <div class="col-md-4" *ngFor="let complaint of complaints">
+      <div class="card border-right">
+        <div class="card-body row">
+          <div class="col-9">
+            <p class="complaint-title card-text"><strong>{{ complaint.description }}</strong></p>
+            <p class="card-text"><i class="bi bi-calendar-week-fill"></i> {{ complaint.datetime | date }} - <span *ngIf="complaint.at_moment; else notAtMoment">At Moment</span><ng-template #notAtMoment>Not At Moment</ng-template></p>
+            <p class="card-text"><i class="bi bi-geo-alt-fill"></i> {{ complaint.place }}</p>
+            <p class="card-text"><i class="bi bi-tag-fill"></i> {{ complaint.type }}</p>
+          </div>
+          <div class="col-3 text-center">
+            <p [ngClass]="{'situation-unsolved': complaint.situation == 'unsolved', 'situation-inprogress': complaint.situation == 'in progress', 'situation-solved': complaint.situation == 'solved'}">{{ complaint.situation }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
